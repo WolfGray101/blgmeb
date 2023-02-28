@@ -16,14 +16,17 @@
       <section class="section upper-header-section">
         <header class="header">
           <div class="logo"><img src="./img/download.gif" alt="" /></div>
-          <div class="burger">
+         
+         
+          <a href="tel:+359899266363">+359 89 926 6363</a>
+           <!-- <div class="burger">
             <div class="burger-item"></div>
             <div class="burger-item"></div>
             <div class="burger-item"></div>
-          </div>
+          </div> -->
         </header>
         <div class="header-section-item-block">
-          <span>МЕБЕЛИ КОЛОР</span>
+          <!-- <span>МЕБЕЛИ КОЛОР</span> -->
           <h1>Ние правим вашия интериор удобен</h1>
         </div>
       </section>
@@ -74,7 +77,7 @@
             <div class="services-item services-item-white">
               <h2>3D модел на мебели</h2>
               <p>Ние ще предоставим на всеки клиент 3D модел</p>
-              <button class="services-item__btn services-item__btn--white">
+              <button class="services-item__btn services-item__btn--white cb-open">
                 Поръчка
               </button>
             </div>
@@ -106,13 +109,13 @@
                 Предлагаме на нашите клиенти безплатна доставка, монтаж,
                 гаранционно обслужване
               </p>
-              <button class="services-item__btn services-item__btn--black">
+              <button class="services-item__btn services-item__btn--black cb-open">
                 Поръчка
               </button>
             </div>
           </div>
           <div class="btn-group">
-            <button class="services-feedback-btn">Обади ми се</button>
+            <button class="services-feedback-btn cb-open">Обади ми се</button>
           </div>
         </div>
       </div>
@@ -188,7 +191,7 @@
           <a href="tel:+359899266363"> +359 89 926 6363 </a>
         </div>
       </div>
-      <div class="services-conteanier visit-container-undo">
+      <div id="galery" class="services-conteanier visit-container-undo">
         <div class="section visit-container">
           <div class="visit-bg-img">
             <div class="swiper">
@@ -260,7 +263,7 @@
             <input type="text" placeholder="+375 XX YYY-YYY-Y" />
 
 
-            <button>Отправить</button>
+            <button class= "btn-submit-form">Отправить</button>
           </form>
         </div>
         <div class="footer-cards">
@@ -306,5 +309,40 @@
   <script> document.querySelector('.circle').innerHTML = "EXAMPLE TEXT".split('')
     .map((e,i) => `<span style="--rot:${i*12}deg">${e}</span>`).join('');
   </script> -->
+  <div class="modal-container modal-cb">
+    <div class="modal">
+      <div class="success-submit" hidden>Успешно отправлено</div>
+      <div class="form-body">
+        <button class="close-modal close">X</button>
+        <h2>Быстро оставить заявку</h2>
+        <h3>
+          Введите номер — позвоним вам в течение 5-10 минут в рабочее время
+        </h3>
+        <form action="">
+          <label for="phone-num">
+            Введите ваш номер телефона
+            <input
+              id="phone-num"
+              type="text"
+              placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"
+            />
+          </label>
+
+          <button class="btn-submit-form" type="submit">
+            Перезвоните мне
+          </button>
+          <!-- <span class="privacy" hidden>Необходимо принять соглашение</span>
+          <label class="checkbox">
+            <input class="form-checkbox" type="checkbox" checked />
+            <span
+              >Нажимая кнопку вы соглашаетесь с условиями Политики
+              конфиденциальности</span
+            >
+          </label> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
   </body>
 </html>

@@ -12,19 +12,27 @@
   font-family: "Comic";
   letter-spacing: 1.2px;
 }
+button:hover{
+  transform: scale(1.05);
+  box-shadow:0 0 .9rem .1rem #b0a885;
+}
 
 a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  transform: scale(1.1);
+  transition-duration: .3s;
+  }
+  .footer-card a:hover {
+    transform: scale(1.1);
+    transition-duration: .3s;
+    }
 .header a {
   font-size: 2rem;
   letter-spacing: 1.2px;
   font-weight: 700;
-}
-.header a:hover {
-transform: scale(1.1);
-transition-duration: .3s;
 }
 .main {
   width: 100%;

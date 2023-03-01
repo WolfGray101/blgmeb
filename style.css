@@ -543,6 +543,19 @@ form button {
   opacity: 0.99;
   top: 0;
 }
+.barands {
+  margin: 0 auto;
+  padding: .5rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.brands-item {
+  display: flex;
+  align-items: center;
+}
+.brands-item__img {
+  width: 100%;
+}
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .section {
@@ -709,6 +722,13 @@ form button {
     right: 1rem;
     top: -1.5rem;
   }
+  .barands {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .brands-item {
+    width: calc(100%/2.2);
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -806,6 +826,16 @@ form button {
   }
   form {
     margin-top: 2rem;
+  }
+  .btn-submit-form {
+    margin-top: 2rem;
+  }
+  .barands {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .brands-item {
+    width: calc(100%/3.2);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -958,6 +988,18 @@ form button {
   .btn-submit-form {
     margin-top: 2rem;
   }
+  .btn-submit-form {
+    margin-top: 2rem;
+  }
+  .barands {
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+  }
+  .brands-item {
+    width: calc(100%/3.5);
+  }
+
 }
 @media screen and (min-width: 992px) and (max-width: 1120px) {
   .section {
@@ -1123,6 +1165,13 @@ form button {
   .btn-submit-form {
     margin-top: 2rem;
   }
+  .barands {
+    justify-content: space-between;
+  
+  }
+  .brands-item {
+    width:calc(100%/6) ;
+  }
 }
 @media screen and (min-width: 1120px) {
   .section {
@@ -1142,6 +1191,12 @@ form button {
   }
   .services-item-center img {
     transform: translateX(-30%);
+  }
+  .barands {
+    flex-wrap: wrap;
+  }
+  .brands-item {
+    width: calc(100%/7)
   }
 
 }
